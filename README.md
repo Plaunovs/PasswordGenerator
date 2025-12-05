@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 ## About
@@ -17,3 +18,6 @@ to this in your browser, and you can call your Go code from devtools.
 ## Building
 
 To build a redistributable, production mode package, use `wails build`.
+=======
+# PasswordGenerator
+>>>>>>> 053b2b5be99271a315e0ebbc1dd8f2fc4fda8df8
