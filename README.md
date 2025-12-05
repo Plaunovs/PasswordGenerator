@@ -1,23 +1,21 @@
-<<<<<<< HEAD
-# README
+# 🔐 Password Generator (Go + Wails)
 
-## About
+A simple cross-platform desktop application for generating secure passwords.  
+Built using **Go**, **Wails v2**, **HTML**, **CSS**, and **Vanilla JavaScript**.
 
-This is the official Wails Vanilla template.
+---
 
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
+## ✨ Features
+- Generate passwords of any length  
+- Options: digits, lowercase, uppercase  
+- Input validation  
+- Password visibility toggle  
+- Minimal and clean UI  
+- Docker support (bonus)
 
-## Live Development
+---
 
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
-
-## Building
-
-To build a redistributable, production mode package, use `wails build`.
-=======
-# PasswordGenerator
->>>>>>> 053b2b5be99271a315e0ebbc1dd8f2fc4fda8df8
+## ▶️ Development Requirements
+- Go 1.23+
+- Node.js & npm
+- Wails CLI
