@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Password Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1b2636;
+            color: white;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        #app {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 6px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        button {
+            padding: 10px;
+            background: #3a76dd;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #resultContainer {
+            margin-top: 10px;
+            border: 1px solid #4a5a70;
+            padding: 10px;
+            min-height: 25px;
+            position: relative;
+        }
+
+        #result {
+            padding-right: 35px; /* vieta acs ikonai */
+        }
+
+        #toggleVisibility {
+            position: absolute;
+            right: 10px;
+            top: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+
+    <h2>Password Generator</h2>
+
+    <label for="lengthInput">Password length:</label>
+    <input id="lengthInput" type="number" min="1" placeholder="Enter length">
+
+
+    <div class="checkbox-group">
+        <label><input type="checkbox" id="digitsCheckbox"> Include digits (0-9)</label>
+        <label><input type="checkbox" id="lowerCheckbox"> Include lowercase (a-z)</label>
+        <label><input type="checkbox" id="upperCheckbox"> Include uppercase (A-Z)</label>
+    </div>
+
+    <button id="generateBtn">Generate</button>
+
+    <div id="resultContainer">
+        <div id="result">Here will appear the generated password</div>
+        <span id="toggleVisibility">👁</span>
+    </div>
+
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
